@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaceSync AI - Real-time Filter Studio</title>
+  </head>
+  <body>
+    <div class="studio-container">
+      <div class="header">
+        <div class="logo">FaceSync AI</div>
+        <div class="tagline">
+          Next-gen browser-based face detection & filtering
+        </div>
+      </div>
+
+      <div class="camera-section">
+        <video
+          id="video"
+          autoplay
+          muted
+          playsinline
+          style="display: none"
+        ></video>
+        <canvas id="canvas" style="display: none"></canvas>
+
+        <div class="camera-overlay">
+          <div class="particle-overlay" id="particleOverlay"></div>
+        </div>
+
+        <button class="start-button" id="startBtn">🚀 Launch AI Camera</button>
+      </div>
+
+      <div class="filters-grid">
+        <div class="filter-btn active" data-filter="normal">
+          <span class="filter-icon">👤</span>
+          Normal
+        </div>
+        <div class="filter-btn" data-filter="cyberpunk">
+          <span class="filter-icon">🌆</span>
+          Cyberpunk
+        </div>
+        <div class="filter-btn" data-filter="rainbow">
+          <span class="filter-icon">🌈</span>
+          Rainbow
+        </div>
+        <div class="filter-btn" data-filter="matrix">
+          <span class="filter-icon">💚</span>
+          Matrix
+        </div>
+        <div class="filter-btn" data-filter="neon">
+          <span class="filter-icon">⚡</span>
+          Neon
+        </div>
+        <div class="filter-btn" data-filter="hologram">
+          <span class="filter-icon">✨</span>
+          Hologram
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <div class="loading-spinner" style="display: none" id="spinner"></div>
+        <span id="status"
+          >Click "Launch AI Camera" to begin face detection</span
+        >
+      </div>
+
+      <div class="demo-mode">
+        🎭 Advanced computer vision powered by modern web APIs
+      </div>
+    </div>
+  </body>
+</html>
