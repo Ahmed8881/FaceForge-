@@ -39,3 +39,25 @@ body {
             animation: gradientShift 3s ease infinite;
             margin-bottom: 10px;
         }
+         @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .tagline {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .camera-section {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            background: #000;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
