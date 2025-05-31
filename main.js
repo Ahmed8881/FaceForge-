@@ -15,4 +15,11 @@
                 
                 this.init();
             }
+             init() {
+                this.startBtn.addEventListener('click', () => this.toggleCamera());
+                this.setupFilterButtons();
+                this.createParticles();
+                this.animateParticles();
+            }
+
         }
